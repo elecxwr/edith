@@ -5,7 +5,7 @@ A quick small wiki, perfect for pasting quick texts or code and sharing it betwe
 
 Don't worry about saving, it saves at every key stroke. Think of it as a magic zero-UI Web notepad.
 
-Try it out at [http://edit.sunfox.org/any-page-name](http://edit.sunfox.org/any-page-name).
+Try it out at [https://rqbb.life/whatever](https://rqbb.life/whatever).
 
 
 Usage
