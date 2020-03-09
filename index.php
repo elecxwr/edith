@@ -36,7 +36,7 @@ if (!defined('MOBWRITE_URI'))
 if (preg_match('/\/$/', $_SERVER["REQUEST_URI"])) 
 {
   // Generate a name with 4 random unambiguous characters. Redirect to it.
-    header("Location: $base_url/" . substr(str_shuffle('234579abcdefghjkmnpqrstwxyz'), -4));
+    header("Location: /" . substr(str_shuffle('234579abcdefghjkmnpqrstwxyz'), -4));
       die;
 }
 
