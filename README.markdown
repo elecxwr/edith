@@ -1,5 +1,6 @@
 Edith
 =====
+*Forked from [sunny/edith](https://github.com/sunny/edith)*
 
 A quick small wiki, perfect for pasting quick texts or code and sharing it between friends.
 
@@ -44,7 +45,8 @@ $ sudo mv * /var/www/html
 Make the `data` directory writeable:
 
 ```sh
-$ chmod a+w data
+$ cd /var/www/html
+$ sudo chmod a+w data
 ```
 
 Enable [Rewrite URLs with mod_rewrite](http://nodejs.org/download/).
@@ -52,13 +54,13 @@ Enable [Rewrite URLs with mod_rewrite](http://nodejs.org/download/).
 Finally, you will need [Node](http://nodejs.org/download/) to build the JavaScript. Install CoffeeScript and UglifyJS:
 
 ```sh
-$ npm install -g coffee-script uglify-js
+$ sudo npm install -g coffee-script uglify-js
 ```
 
 You can now compile, compress and generate JavaScript source maps:
 
 ```sh
-$ cake build
+$ sudo cake build
 ```
 
 
