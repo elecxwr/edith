@@ -28,7 +28,7 @@ class Page {
   }
 
   function load() {
-    $this->text = 'Edit me!';
+    $this->text = '';
     if ($this->exists())
       $this->text = file_get_contents($this->filepath());
   }
