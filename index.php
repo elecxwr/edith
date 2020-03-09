@@ -32,6 +32,14 @@ if (!defined('MOBWRITE_KEY'))
 if (!defined('MOBWRITE_URI'))
   define('MOBWRITE_URI', null);
 
+// If no name is provided
+if (preg_match('/\/$/', $_SERVER["REQUEST_URI"])) 
+{
+  // Generate a name with 4 random unambiguous characters. Redirect to it.
+    header("Location: $base_url/" . substr(str_shuffle('234579abcdefghjkmnpqrstwxyz'), -4));
+      die;
+}
+
 if (file_exists(preg_replace('#^\/#', '', $_SERVER["REQUEST_URI"])))
   return false;
 
