@@ -36,8 +36,9 @@ Install it yourself
 Download the files. For example, using git:
 
 ```sh
-$ git clone https://github.com/sunny/edith.git
+$ git clone https://github.com/elecxwr/edith.git
 $ cd edith
+$ sudo mv * /var/www/html
 ```
 
 Make the `data` directory writeable:
@@ -46,11 +47,7 @@ Make the `data` directory writeable:
 $ chmod a+w data
 ```
 
-Tell your HTTP server to redirect pages not found to `index.php`. If you are using Apache:
-
-```sh
-$ cp htaccess.example .htaccess
-```
+Enable [Rewrite URLs with mod_rewrite](http://nodejs.org/download/).
 
 Finally, you will need [Node](http://nodejs.org/download/) to build the JavaScript. Install CoffeeScript and UglifyJS:
 
