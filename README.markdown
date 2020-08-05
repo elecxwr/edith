@@ -49,7 +49,7 @@ $ cd /var/www/html
 $ sudo chmod a+w data
 ```
 
-Enable [Rewrite URLs with mod_rewrite](http://nodejs.org/download/).
+Enable [Rewrite URLs with mod_rewrite](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04).
 
 Finally, you will need [Node](http://nodejs.org/download/) to build the JavaScript. Install CoffeeScript and UglifyJS:
 
